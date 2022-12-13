@@ -1,0 +1,81 @@
+
+/*kohdistuu kaikkiinelementteihin bodyn sisällä */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nämä tyylimääräiset kohdistuvat kaikkiin elementteihein*/
+* {
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+/*NAVBAR*/
+ul.navbar{
+    padding: 5px;
+    background-color: bisque;
+}
+
+/* piste = class*/
+.beige{
+    background-color: bisque;
+}
+
+/* li elementit on oletuksena blokkeja -> muutetaan inlineksi. jotta saadaan samalle riville*/
+.navbar li{
+    display: inline;
+    /* viiva oikealle puolelle*/
+    border-right: 1px solid black;
+}
+
+.navbar li:last-child{
+border: none;
+
+}
+
+
+.navbar a {
+    padding: 5px;
+    /* poistetaan linkeiltä alleviivaus*/
+    text-decoration: none;
+
+}
+
+ul a {
+    /*poistetaan alleviivaus*/
+    text-align: none;
+}
+
+a:hover{
+    color: blue;
+}
+a[target="_blank"]{
+    font-weight: bold;
+}
+
+a
+ul + p {
+    border-top: 1px solid black;
+}
+
+ul ~ p{
+    color: crimson;
+}
+
+.col {
+    border: 1px dashed darkmagenta;
+}
+
+[class^="box"] {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* jokatoisen */
+tr:nth-child(odd){
+    background-color: aqua;
+}
